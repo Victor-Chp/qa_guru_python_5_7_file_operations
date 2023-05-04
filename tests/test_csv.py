@@ -11,8 +11,7 @@ def test_csv():
         for row in rows:
             csvwriter.writerow(row)
 
-
-    with open('resources/eggs.csv') as csvfile:
+    with open(csv_path) as csvfile:
         csvreader = csv.reader(csvfile)
         rows_from_csv = []
         for row in csvreader:
